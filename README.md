@@ -1,4 +1,4 @@
 # CoffeeService 
-pet project to study MEAN stack
+pet project to study:
 
-![Image alt](https://github.com/Evge-s/CoffeeService/raw/master/Resources/MEAN.png)
+![Image alt](https://github.com/Evge-s/CoffeeService/raw/master/Resources/meanstack.png)
