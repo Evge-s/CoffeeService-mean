@@ -1,15 +1,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+//import fileUpload from "express-fileupload";
 
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:4200"
 };
 
 app.use(cors(corsOptions));
-
+//app.use(fileUpload({}));
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
 
@@ -19,10 +20,22 @@ app.use(bodyParser.urlencoded({
 }));
 
 // simple route
-app.get("/", (req, res) => {
-  res.json({
-    message: "Welcome to application."
-  });
+app.get("/", (req, res, next) => {
+  let jsonResponce = {
+    "handsetCards": [
+      { imageName: 'offer1', title: 'Card 1', cols: 2, rows: 1 },
+      { imageName: 'offer2', title: 'Card 2', cols: 2, rows: 1 },
+      { imageName: 'offer3', title: 'Card 3', cols: 2, rows: 1 },
+      { imageName: 'offer4', title: 'Card 4', cols: 2, rows: 1 }
+    ],
+    "webCards": [
+      { imageName: 'offer1', title: 'Card 1', cols: 2, rows: 1 },
+      { imageName: 'offer2', title: 'Card 2', cols: 1, rows: 1 },
+      { imageName: 'offer3', title: 'Card 3', cols: 1, rows: 2 },
+      { imageName: 'offer4', title: 'Card 4', cols: 1, rows: 1 }
+    ]
+  }
+  res.json(jsonResponce);
 });
 
 // routes

@@ -1,0 +1,21 @@
+.registerBlock{
+    width:300px; /* ширина блока */
+    height: auto; /* высота блока */
+    background: #fff; /* фон блока */
+    border-radius: 10px; /* закругленные углы блока */
+    margin: 10% auto; /* отступ сверху и выравнивание по середине */
+    box-shadow: 2px 2px 4px 0px #000000; /* тень блока */
+}
+.registerBlock h1 {
+    margin: 0; /* убираем отступы */
+    background-color: #282830; /* фон заголовка */
+    border-radius: 10px 10px 0 0; /* закругляем углы сверху */
+    color: #fff; /* цвет текста */
+    font-size: 14px; /* размер шрифта */
+    padding: 20px; /* отступы */
+    text-align: center; /* выравниваем текст по центру */
+    text-transform: uppercase; /* все символы заглавные */
+}
+.inp{
+    padding:20px; /* отступы */
+}

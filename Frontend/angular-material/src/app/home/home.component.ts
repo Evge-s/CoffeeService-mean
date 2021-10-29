@@ -54,7 +54,8 @@ export class HomeComponent {
   }
 
   getImage(imageName: string): string {
-    return 'url(' + 'http://localhost:3000/images/' + imageName + '.jpg' + ')';
+    //return 'url(' + 'http://localhost:8080/images/' + imageName + '.jpg' + ')';
+    return 'url(' + '../assets/' + imageName + '.jpg' + ')';
   }
 }
 
